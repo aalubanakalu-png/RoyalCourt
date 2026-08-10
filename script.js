@@ -441,5 +441,6 @@ function renderFinal() {
 }
 
 document.getElementById("btn-restart").addEventListener("click", () => {
+  showScreen("screen-loading");
   playSoundThen("playagain", () => window.location.reload());
 });
